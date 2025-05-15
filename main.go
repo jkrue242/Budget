@@ -8,9 +8,10 @@ import (
 	"net/http"
 )
 
-type Message struct{ Greeting string `json:"greeting"` }
-
+//go:embed webclient/dist
 var staticFS embed.FS
+
+type Message struct{ Greeting string `json:"greeting"` }
 
 func apiGreeting(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")

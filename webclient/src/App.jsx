@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <main style={{ fontFamily: 'system-ui, sans-serif', margin: '2rem' }}>
-      <h1>Simple GUI backed by Go + React</h1>
+      <h1>Budget App</h1>
       <button onClick={loadGreeting}>Load greeting</button>
       <p>{msg}</p>
     </main>
